@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    0deg,
+    rgb(85, 138, 253) 0%,
+    rgb(165, 203, 253) 100%
+  );
+  min-height: 100vh;
+}
+h1 {
+  letter-spacing: 0.06em;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+.search-bar {
+  border: 0px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 500px;
+  min-width: 200px;
+  background-color: rgba(108, 141, 185, 0.13);
+  box-shadow: inset 0px 3px 10px rgb(91, 138, 240);
+}
+
+.card {
+  text-align: center;
+  text-shadow: 0px 3px 4px rgb(126, 131, 143);
+  font-size: 0.8rem;
+  box-shadow: 0px 10px 10px rgb(70, 107, 185);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 25px;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.76);
+  text-shadow: 0px 3px 4px rgb(126, 131, 143);
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+}
+
+.card .card-img-top {
+  width: 95%;
+  box-shadow: 0px 3px 10px rgb(126, 131, 143);
+  border-radius: 8px;
+}
+
+.weather {
+  border-left: 2px rgba(128, 128, 128, 0.452) solid;
+  line-height: 50px;
+}
+
+.country {
+  line-height: 30px;
+}
+
+.hl {
+  background-color: #ffff7d;
+}
+
+.bg-header {
+  width: 70%;
+  z-index: -1;
+  font-size: 15em;
+  letter-spacing: 0.2em;
+  background-color: rgb(70, 107, 185);
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(150, 207, 253, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.matchContainer {
+  position: absolute;
+  width: 27%;
+  left: 46%;
+  transform: translateX(-50%);
+  z-index: 1;
+  max-height: 90%;
+}
+
+.matchOption {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  margin-bottom: 2px;
+}
+
+.matchOption:hover {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+}
