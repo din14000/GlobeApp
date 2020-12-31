@@ -1,7 +1,7 @@
-const btn = window.document.querySelector(".searchBtn");
-const searchBar = window.document.querySelector(".search-bar");
-const card = window.document.querySelector(".main");
-const matchContainer = window.document.querySelector(".matchContainer");
+const btn = document.querySelector(".searchBtn");
+const searchBar = document.querySelector(".search-bar");
+const card = document.querySelector(".main");
+const matchContainer = document.querySelector(".matchContainer");
 let matches = [];
 
 //Countries API
@@ -130,7 +130,7 @@ const displayMatches = (matches) => {
       })
       .join("");
     matchContainer.innerHTML = html;
-    window.document.querySelectorAll("div.matchOption").forEach((option) =>
+    document.querySelectorAll("div.matchOption").forEach((option) =>
       option.addEventListener("click", (e) => {
         fetchBySelect(e.target);
         matches = [];
