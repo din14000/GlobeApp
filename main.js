@@ -10,11 +10,10 @@ app.use(express.static("static"));
 
 //Home Page :index.html
 app.get("/", (req, res) => {
-  res.sendFile("./static");
+  res.sendFile("./static/app.js");
 });
-
 
 port = 3000;
 app.listen(port, (err) => {
-    console.log(`listening on port ${port}...`)
-})
+  console.log(`listening on port ${port}...`);
+});
