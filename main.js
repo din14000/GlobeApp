@@ -10,7 +10,7 @@ app.use(express.static("static"));
 
 //Home Page :index.html
 app.get("/", (req, res) => {
-  res.sendFile("./static/app.js");
+  res.sendFile("./static/app.html");
 });
 
 port = 3000;
