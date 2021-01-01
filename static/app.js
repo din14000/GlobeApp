@@ -8,7 +8,7 @@ let matches = [];
 const curl = "https://restcountries.eu/rest/v2/";
 
 //Weather API
-const wurl = "http://api.openweathermap.org/data/2.5/weather?";
+const wurl = "https://api.openweathermap.org/data/2.5/weather?";
 const apiKey = "appid=804175cc7324c33db31ee45367377a33";
 let lat;
 let lon;
