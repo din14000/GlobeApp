@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "node src/main.js",
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
