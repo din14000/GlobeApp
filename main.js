@@ -13,7 +13,10 @@ app.get("/", (req, res) => {
   res.sendFile("./static");
 });
 
-port = 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 app.listen(port, (err) => {
   console.log(`listening on port ${port}...`);
 });
